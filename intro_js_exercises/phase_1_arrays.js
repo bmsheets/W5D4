@@ -37,16 +37,16 @@ Array.prototype.twoSum = function() {
 
 Array.prototype.transpose = function() {
   const result = [];
-  for(let row = 0; row < this.length; row++) {
+  for(let row = 0; row < this[0].length; row++) {
     result.push([]);
-    for(let col = 0; col < this[row].length; col++) {
-      result[row][col] = this[col][row];
+    for(let col = 0; col < this.length; col++) {
+      result[row].push(this[col][row]);
     }
   }
   return result;
 };
 
-var arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+var arr = [[1, 2, 3], [4, 5, 6]];
 console.log(arr);
 arr = arr.transpose();
 console.log(arr);
