@@ -1,16 +1,16 @@
-Array.prototype.bubbleSort = function () {
-  for (let i = 0; i < this.length - 1; i++) {
-    console.log(this);
-    let i = i;
-    while(this[j] > this[j + 1]) {
-      const temp = this[j];
-      this[j] = this[j + 1];
-      this[j + 1] = temp;
-      j++;
-    }
-  }
-  return this;
-};
+// Array.prototype.bubbleSort = function () {
+//   for (let i = 0; i < this.length - 1; i++) {
+//     console.log(this);
+//     let i = i;
+//     while(this[j] > this[j + 1]) {
+//       const temp = this[j];
+//       this[j] = this[j + 1];
+//       this[j + 1] = temp;
+//       j++;
+//     }
+//   }
+//   return this;
+// };
 
 Array.prototype.bubbleSort = function () {
   let swapped = true;
